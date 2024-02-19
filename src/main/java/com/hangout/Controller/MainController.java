@@ -13,8 +13,13 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 public class MainController {
 
-    @GetMapping("/NavigationBar")
+    @GetMapping("/Main")
     public String Main(RedirectAttributes redirectAttributes) {
+        return "HangOut/Main";
+    }
+
+    @GetMapping("/NavigationBar")
+    public String NavigationBar(RedirectAttributes redirectAttributes) {
         return "HangOut/NavigationBar";
     }
 }
