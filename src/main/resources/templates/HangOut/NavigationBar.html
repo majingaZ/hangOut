@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<style>
-    .Nav {
-        display: flex;
-        background-color: #ffb800;
-        height: 50px;
-        align-items: center; /* 요소를 수직 중앙 정렬 */
-    }
-
-    .Menu {
-        font-size: 150%;
-    }
-
-    .Logo {
-        font-size: 200%;
-    }
-
-</style>
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .Nav {
+            display: flex;
+            background-color: #ffb800;
+            height: 50px;
+            align-items: center; /* 요소를 수직 중앙 정렬 */
+        }
+
+        .Menu {
+            font-size: 150%;
+        }
+
+        .Logo {
+            font-size: 200%;
+        }
+
+    </style>
 </head>
 <body>
-<div class="Nav">
+<div th:fragment="NavigationBar" class="Nav">
     <p class="Logo" style="margin-left: 1%">Hang Out</p>
-    <p class="Menu" style="margin-left: 2%">Board</p>
-    <p class="Menu" style="margin-left: 76%">Login</p>
+    <p class="Menu" style="margin-left: 2%">OneDayCalss</p>
+    <p class="Menu" style="margin-left: 2%">SmallGruop</p>
+    <p class="Menu" style="margin-left: 2%">Review</p>
+    <p class="Menu" style="margin-left: 57.5%">Login</p>
     <p class="Menu" style="margin-left: 1%">Register</p>
 </div>
 </body>
