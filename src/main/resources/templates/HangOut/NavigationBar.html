@@ -19,6 +19,11 @@
             font-size: 200%;
         }
 
+        a {
+            color: inherit; /* 링크 색상을 부모 요소의 색으로 상속 */
+            text-decoration: none; /* 밑줄 제거 */
+        }
+
     </style>
 </head>
 <body>
@@ -26,7 +31,7 @@
     <p class="Logo" style="margin-left: 1%">Hang Out</p>
     <p class="Menu" style="margin-left: 2%">OneDayCalss</p>
     <p class="Menu" style="margin-left: 2%">SmallGruop</p>
-    <p class="Menu" style="margin-left: 2%">Review</p>
+    <a class="Menu" style="margin-left: 2%" th:href="@{/HangOut/Review}">Review</a>
     <p class="Menu" style="margin-left: 58%">Login</p>
     <p class="Menu" style="margin-left: 1%">Register</p>
 </div>
