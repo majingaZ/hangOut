@@ -27,8 +27,7 @@ public class MainController {
 
     @GetMapping({"/Review"})
     public void Reviewlist(PageRequestDTO pageRequestDTO, Model model) {
-        //log.info("list.................." + pageRequestDTO);
 
-        //model.addAttribute("result", service.getList(pageRequestDTO));
+        // model.addAttribute("result", service.getList(pageRequestDTO));
     }
 }
