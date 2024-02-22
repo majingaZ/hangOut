@@ -30,4 +30,9 @@ public class MainController {
 
         // model.addAttribute("result", service.getList(pageRequestDTO));
     }
+
+    @GetMapping("/smallGroup")
+    public void smallGroup(Model model){
+
+    }
 }
